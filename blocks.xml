@@ -1,0 +1,445 @@
+<xml xmlns="https://developers.google.com/blockly/xml">
+  <block type="s4d_on_message" id="|laFX%@?94?)CR%f907e" x="1252" y="-546">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id="jC{~4IP;+Xl;R[~IX#|2">
+        <value name="IF0">
+          <block type="logic_compare" id="+KWOY(tcA;Yr#nXold*k">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="s4d_message_content" id="h8-k9aR{;Zh5)NcAf`d~"></block>
+            </value>
+            <value name="B">
+              <block type="text" id="R?X}-x.Gzlc-M3#t}Q1y">
+                <field name="TEXT">am!help</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="s4d_reply" id="d/hAp5StOLJR00MiqpN.">
+            <value name="CONTENT">
+              <shadow type="text" id="#P|#kqjc3i6z!fE+XBqb">
+                <field name="TEXT">Hey!</field>
+              </shadow>
+              <block type="s4d_message_embed" id="d`M3AjU08:57H2%5]%8=">
+                <mutation xmlns="http://www.w3.org/1999/xhtml" message="true" color="true" footer="true"></mutation>
+                <value name="MESSAGE">
+                  <block type="text_join" id="RQ3Ax?C*1=VA^#h*wef@">
+                    <mutation items="8"></mutation>
+                    <value name="ADD0">
+                      <block type="text" id="(qqDxC5(%oMO{8lqr?W:">
+                        <field name="TEXT">**AM-36 ist der offizielle Auto-Message Bot des Servers AncientUnity.net**</field>
+                      </block>
+                    </value>
+                    <value name="ADD1">
+                      <block type="s4d_newline" id="Ff4Es+%qQqgj;mTl+OS~"></block>
+                    </value>
+                    <value name="ADD2">
+                      <block type="text" id="X$8]tB.H.EmNRBg~Ai!V">
+                        <field name="TEXT">Mit AM-36 könnt ihr den Bot die Autowerbung von AncientUnity.net als Embed senden.</field>
+                      </block>
+                    </value>
+                    <value name="ADD3">
+                      <block type="s4d_newline" id="vxFmZk9H{(JVcs9*Xi~^"></block>
+                    </value>
+                    <value name="ADD4">
+                      <block type="text" id="K.eTTl:D2j{.t{#d}C4J">
+                        <field name="TEXT">`am!addauto` Aktiviert die Auto-Message in dem Channel, in den die Nachricht gesendet wurde.</field>
+                      </block>
+                    </value>
+                    <value name="ADD5">
+                      <block type="s4d_newline" id="Z_6yM?ME;OeHToARu3QR"></block>
+                    </value>
+                    <value name="ADD6">
+                      <block type="text" id="(]*BY;tlp:gBwLE3b!:,">
+                        <field name="TEXT">`am!removeauto` Deaktviert die Auto-Message in dem Channel, in den die Nachricht gesendet wurde.</field>
+                      </block>
+                    </value>
+                    <value name="ADD7">
+                      <block type="s4d_newline" id="y:TUjg]cNH)bh9]}}jbu"></block>
+                    </value>
+                  </block>
+                </value>
+                <value name="COLOR">
+                  <block type="colour_picker" id="J^-ycc62O%?swF$0{YW@">
+                    <field name="COLOUR">#ffffff</field>
+                  </block>
+                </value>
+                <value name="TITLE">
+                  <block type="text" id="uR#7n:y`ndcnWDa!th,A">
+                    <field name="TEXT">Hilfe zu AM-36</field>
+                  </block>
+                </value>
+                <value name="FOOTER">
+                  <block type="text" id="9GS(zgg:9o?`ej{Io,53">
+                    <field name="TEXT">© Avenue, 2021</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="s4d_login" id="1WRw,^%|n|yKJLzo2@i7" x="216" y="112">
+    <value name="TOKEN">
+      <block type="text" id="fp/7XE0mvim;BaFVt*:%">
+        <field name="TEXT">ODYyNzMwMjMyODkyNzUxOTI0.YOcmJA.XA0iCOxOG0f2-D_DoFTZXHaD3Kw</field>
+      </block>
+    </value>
+  </block>
+  <block type="s4d_on_connected" id="4jb4|l+Z;2Z:|z4,tf}*" x="70" y="202">
+    <statement name="STATEMENTS">
+      <block type="s4d_forever" id="v;jGi#gP%d,nq)8S6D7c">
+        <statement name="STATEMENT">
+          <block type="s4d_set_bot_game" id="lrE3;S2N_($0n`==]ax9">
+            <value name="GAME">
+              <block type="text_join" id="f:bfiB@=@O!bMBM*S#r`">
+                <mutation items="3"></mutation>
+                <value name="ADD0">
+                  <block type="text" id="b)gn~Urc0~35TxaySm=G">
+                    <field name="TEXT">auf </field>
+                  </block>
+                </value>
+                <value name="ADD1">
+                  <block type="s4d_bot_server_count" id="th[#R^.6LZ_2(2$c7^vb"></block>
+                </value>
+                <value name="ADD2">
+                  <block type="text" id="B`kFq@Fo,qGfT*sLwpqn">
+                    <field name="TEXT"> Server/n!</field>
+                  </block>
+                </value>
+              </block>
+            </value>
+            <next>
+              <block type="s4d_wait_seconds" id="h88zRlputcHJ~|PQ=DMT">
+                <value name="TIME">
+                  <shadow type="math_number" id="t}JWozP9z2|MM;LGb.*{">
+                    <field name="NUM">6</field>
+                  </shadow>
+                </value>
+                <next>
+                  <block type="s4d_set_bot_game" id="`}5q,q9}@olT$YfJ,Asm">
+                    <value name="GAME">
+                      <block type="text" id=";g=|Y`C9Sc4eja?b9LES">
+                        <field name="TEXT">auf AncientUnity.net</field>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="s4d_wait_seconds" id="JY5/Oh+OLrWLKh}UJ-s?">
+                        <value name="TIME">
+                          <shadow type="math_number" id="[Y#D`a*fz_t|w.G3Lz^:">
+                            <field name="NUM">6</field>
+                          </shadow>
+                        </value>
+                        <next>
+                          <block type="s4d_set_bot_game" id="zzI+OK:$;3TI!5Y~7SC6">
+                            <value name="GAME">
+                              <block type="text" id="QO5z_y{rmDg!vH8AARKK">
+                                <field name="TEXT">made by Λ V Ξ N U Ξ#4493 with ❤</field>
+                              </block>
+                            </value>
+                            <next>
+                              <block type="s4d_wait_seconds" id="yI=RK.|69u*Ik{$.#Emj">
+                                <value name="TIME">
+                                  <shadow type="math_number" id="00mKT]I2i}L@,O2{NF_v">
+                                    <field name="NUM">6</field>
+                                  </shadow>
+                                </value>
+                                <next>
+                                  <block type="s4d_set_bot_game" id="02=Xz)OeYFyGtHk:LsO9">
+                                    <value name="GAME">
+                                      <block type="text" id=")5VF9ZIKa0pX.bENO`yp">
+                                        <field name="TEXT">Lunar Client 1.8.9</field>
+                                      </block>
+                                    </value>
+                                    <next>
+                                      <block type="s4d_wait_seconds" id="Ca43YdWOVV=YZ0Z~oB}O">
+                                        <value name="TIME">
+                                          <shadow type="math_number" id="QIofW5,;hW4fJ:wWKt9K">
+                                            <field name="NUM">6</field>
+                                          </shadow>
+                                        </value>
+                                        <next>
+                                          <block type="s4d_set_bot_game" id="EHv@ayitV]9~`hGz4ZFQ">
+                                            <value name="GAME">
+                                              <block type="text" id="KgaPp4ufxHKXDx_ztnH]">
+                                                <field name="TEXT">Prefix: am!</field>
+                                              </block>
+                                            </value>
+                                            <next>
+                                              <block type="s4d_wait_seconds" id="b2TZi.AhE}SXtkt?meUZ">
+                                                <value name="TIME">
+                                                  <shadow type="math_number" id="Cv%]Ntpk?R$[|:3ZjMx}">
+                                                    <field name="NUM">6</field>
+                                                  </shadow>
+                                                </value>
+                                              </block>
+                                            </next>
+                                          </block>
+                                        </next>
+                                      </block>
+                                    </next>
+                                  </block>
+                                </next>
+                              </block>
+                            </next>
+                          </block>
+                        </next>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="s4d_on_message" id="Qx+aIDM=_,mj^tl$vGmW" x="705" y="260">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id="Cr$f.P2*Nq2Dl}?D!r`(">
+        <value name="IF0">
+          <block type="logic_compare" id="oq-Tf{oSnv,],{N*FSF|">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="s4d_message_content" id="pyFMNvR6J#o6Ky/UA~]f"></block>
+            </value>
+            <value name="B">
+              <block type="text" id=";[??XKp36YJf2U}j2_}e">
+                <field name="TEXT">am!addauto</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="s4d_reply" id="Oi$$gBCHeaZc_xEM1Y1l">
+            <value name="CONTENT">
+              <shadow type="text" id="RF*l}?i;N`(KlL|QX#;I">
+                <field name="TEXT">Auto-Message wurde erfolgreich zu diesem Channel hinzugefügt!</field>
+              </shadow>
+            </value>
+            <next>
+              <block type="controls_whileUntil" id="A.=E+l@D0Y2L;3-4)}cH">
+                <field name="MODE">UNTIL</field>
+                <value name="BOOL">
+                  <block type="logic_compare" id=")ymId)lt8g~lhZ)[oS2K">
+                    <field name="OP">EQ</field>
+                    <value name="A">
+                      <block type="s4d_message_content" id="_cz!*bXo.p6O,4=68nP8"></block>
+                    </value>
+                    <value name="B">
+                      <block type="text" id=")k^fCzy#a6-.@XsaMe9-">
+                        <field name="TEXT">am!removeauto</field>
+                      </block>
+                    </value>
+                  </block>
+                </value>
+                <statement name="DO">
+                  <block type="s4d_reply" id="{{FOp1SGY%ZLhNFe8WZT">
+                    <value name="CONTENT">
+                      <shadow type="text" id="+EVL3Ipb$GNctd/L}y{i">
+                        <field name="TEXT"></field>
+                      </shadow>
+                      <block type="s4d_message_embed" id="nq:8HTy|Ix|!H*KKay7}">
+                        <mutation xmlns="http://www.w3.org/1999/xhtml" message="true" color="true" footer="true"></mutation>
+                        <value name="MESSAGE">
+                          <block type="text_join" id="~lC:{1pRxx[bKj2q)k@/">
+                            <mutation items="36"></mutation>
+                            <value name="ADD0">
+                              <block type="text" id="w[!HE_v;q=m(+V1ouzF]">
+                                <field name="TEXT">🧬 | ᗩᑎᑕIEᑎTᑌᑎITY.ᑎET | 🧬</field>
+                              </block>
+                            </value>
+                            <value name="ADD1">
+                              <block type="s4d_newline" id="X8{m=?@c2${=EV?4hK~Q"></block>
+                            </value>
+                            <value name="ADD2">
+                              <block type="s4d_newline" id="tw8iN~7e!;.@$_6tv3Fu"></block>
+                            </value>
+                            <value name="ADD3">
+                              <block type="text" id="o%no!5du5?NO~+Cvn^.3">
+                                <field name="TEXT">〘═════════«◇»═════════〙</field>
+                              </block>
+                            </value>
+                            <value name="ADD4">
+                              <block type="s4d_newline" id="u?0J6+Zc59Z$VgYGgVYB"></block>
+                            </value>
+                            <value name="ADD5">
+                              <block type="s4d_newline" id="jCZ^I`f6Mgca|qfgbWaf"></block>
+                            </value>
+                            <value name="ADD6">
+                              <block type="text" id="Pg.c4DL|601=LKvRG(a}">
+                                <field name="TEXT">&gt; Viele nette und aktive Mitglieder</field>
+                              </block>
+                            </value>
+                            <value name="ADD7">
+                              <block type="s4d_newline" id="=ungL_8TSuh@|N[dJh^X"></block>
+                            </value>
+                            <value name="ADD8">
+                              <block type="s4d_newline" id="(*{6Y_jFE:u|defF%HX;"></block>
+                            </value>
+                            <value name="ADD9">
+                              <block type="text" id="TgHR1?GzoG(/mcYA].:Z">
+                                <field name="TEXT">&gt; Sehr viele Giveaways</field>
+                              </block>
+                            </value>
+                            <value name="ADD10">
+                              <block type="s4d_newline" id="5`Tlr}cv6!THJ?K8ZjA*"></block>
+                            </value>
+                            <value name="ADD11">
+                              <block type="s4d_newline" id="01#~YluX:4SzRwc)qu.P"></block>
+                            </value>
+                            <value name="ADD12">
+                              <block type="text" id="=g4fk]r@(Vqe4]s{kUWO">
+                                <field name="TEXT">&gt; Self Promotion</field>
+                              </block>
+                            </value>
+                            <value name="ADD13">
+                              <block type="s4d_newline" id="UDNRA}zR5ikwH6w8(vrX"></block>
+                            </value>
+                            <value name="ADD14">
+                              <block type="s4d_newline" id="Ab2yAqDlwWm7`pSIVV.m"></block>
+                            </value>
+                            <value name="ADD15">
+                              <block type="text" id="Y;DR4qa|$.zre2fgHs*j">
+                                <field name="TEXT">&gt; Ein Nitro-Giveaway ab 100 Membern</field>
+                              </block>
+                            </value>
+                            <value name="ADD16">
+                              <block type="s4d_newline" id="YWs7pphYjpU|fU};4Iw`"></block>
+                            </value>
+                            <value name="ADD17">
+                              <block type="s4d_newline" id="[UEwX%^IyW`_KLv(A|4f"></block>
+                            </value>
+                            <value name="ADD18">
+                              <block type="text" id="ot2!?UYiNd$OIEIxhhJ9">
+                                <field name="TEXT">&gt; Eigener Join/Leave Plugin</field>
+                              </block>
+                            </value>
+                            <value name="ADD19">
+                              <block type="s4d_newline" id="m`3j?-tWGkUVUdYmMMzG"></block>
+                            </value>
+                            <value name="ADD20">
+                              <block type="s4d_newline" id="!K-!N#Hn?ACd^hx}*!=u"></block>
+                            </value>
+                            <value name="ADD21">
+                              <block type="text" id="aLd|uvp7r}{dOLv@X8WP">
+                                <field name="TEXT">&gt; Invite-Shop</field>
+                              </block>
+                            </value>
+                            <value name="ADD22">
+                              <block type="s4d_newline" id="x`xW@wsie8H-VJK)l:Hh"></block>
+                            </value>
+                            <value name="ADD23">
+                              <block type="s4d_newline" id="FYse-$3S/3_NA6Kj*WoH"></block>
+                            </value>
+                            <value name="ADD24">
+                              <block type="text" id="{-|-,?Ki;og6BcGL(@,r">
+                                <field name="TEXT">&gt; Eigener 12GB RAM Minecraft-Server</field>
+                              </block>
+                            </value>
+                            <value name="ADD25">
+                              <block type="s4d_newline" id="}JR.CraT;)A@l%f|i+%0"></block>
+                            </value>
+                            <value name="ADD26">
+                              <block type="s4d_newline" id="S{JKe2J2Gx]5/uT[n/s;"></block>
+                            </value>
+                            <value name="ADD27">
+                              <block type="text" id="EBU4EV!,.~2K^?rz|OA=">
+                                <field name="TEXT">&gt; Und vieles mehr!</field>
+                              </block>
+                            </value>
+                            <value name="ADD28">
+                              <block type="s4d_newline" id="Q(K]@n9{4pP}2I8Bh$HW"></block>
+                            </value>
+                            <value name="ADD29">
+                              <block type="s4d_newline" id="iJ~|+$uv}5jQ[2nj@T/H"></block>
+                            </value>
+                            <value name="ADD30">
+                              <block type="text" id="H-b8F)GDXYgP/VXR/$IS">
+                                <field name="TEXT">〘═════════«◇»═════════〙</field>
+                              </block>
+                            </value>
+                            <value name="ADD31">
+                              <block type="s4d_newline" id="!22Q0^uU3*kfqh%|I[rT"></block>
+                            </value>
+                            <value name="ADD32">
+                              <block type="s4d_newline" id="*Y`)_qMGLkrKa#dGml+A"></block>
+                            </value>
+                            <value name="ADD33">
+                              <block type="text" id="6=*1#)KH`K=n0JM7ta0L">
+                                <field name="TEXT">⌠ 📰 Einladung: https://discord.gg/tpbhh9euFm ⌡</field>
+                              </block>
+                            </value>
+                            <value name="ADD34">
+                              <block type="s4d_newline" id="5FZnC`lS=JT6*;OpRm_T"></block>
+                            </value>
+                            <value name="ADD35">
+                              <block type="text" id="C!I5LuPqw@@dn+|Ij6Qd">
+                                <field name="TEXT">⌠ 🎥 GIF: https://cdn.discordapp.com/attachments/861661855202279430/861958108687499304/standard.gif ⌡</field>
+                              </block>
+                            </value>
+                          </block>
+                        </value>
+                        <value name="COLOR">
+                          <block type="colour_picker" id="tp?MTq6MDe+-fDhZ7PFS">
+                            <field name="COLOUR">#ffffff</field>
+                          </block>
+                        </value>
+                        <value name="FOOTER">
+                          <block type="text" id="i{Z*W8V~QOHyv;s(?}Q|">
+                            <field name="TEXT">© Avenue, 2021</field>
+                          </block>
+                        </value>
+                      </block>
+                    </value>
+                    <next>
+                      <block type="s4d_wait_seconds" id="m*4JR3LQ5M*^e0ETtmfd">
+                        <value name="TIME">
+                          <shadow type="math_number" id="XKnWnti:w!{q9F~aZLWi">
+                            <field name="NUM">21600</field>
+                          </shadow>
+                        </value>
+                      </block>
+                    </next>
+                  </block>
+                </statement>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+  <block type="s4d_on_message" id="QywmH$@3iB%.*6uJid#6" x="1584" y="294">
+    <statement name="STATEMENTS">
+      <block type="controls_if" id="N24@,Sr3[zV.nk;6:K]}">
+        <value name="IF0">
+          <block type="logic_compare" id="40rbZTwP|AUJH$sipif%">
+            <field name="OP">EQ</field>
+            <value name="A">
+              <block type="s4d_message_content" id="$XUufAbl@10i67-yMSs3"></block>
+            </value>
+            <value name="B">
+              <block type="text" id="f*`EnmosP|XtB1SLtxFw">
+                <field name="TEXT">am!removeauto</field>
+              </block>
+            </value>
+          </block>
+        </value>
+        <statement name="DO0">
+          <block type="s4d_reply" id=":5)iD=GNcHdQ#%F$W5x!">
+            <value name="CONTENT">
+              <shadow type="text" id="u2,?qLx{PI1$estxgm[.">
+                <field name="TEXT">Auto-Message wurde erfolgreich geremoved!</field>
+              </shadow>
+            </value>
+          </block>
+        </statement>
+      </block>
+    </statement>
+  </block>
+</xml>
